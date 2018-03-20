@@ -16,6 +16,14 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 })
 
+app.get('/packages', function (req, res) {
+  res.sendFile(__dirname + '/packages.html');
+})
+
+app.get('/testimonials', function (req, res) {
+  res.sendFile(__dirname + '/testimonials.html');
+})
+
 
 app.listen(process.env.PORT || 8091, function () {
   console.log('Listening on port 8091!')

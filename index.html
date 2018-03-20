@@ -6,24 +6,58 @@
     <title>Beyond Fit</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     <link href="static/css/style.css" type="text/css" rel="stylesheet" />
-
+    <script src="https://use.fontawesome.com/e197efd770.js"></script>
   </head>
   <body>
 
     <div class="hero">
       <div class="hero__nav">
-        <img src="/static/img/logo_white.png" />
-        <a class="hero__nav__contact" href="#contact">Contact</a>
+        <a href="/"><img src="/static/img/logo_white.png" /></a>
+        <div class="fx menu-dt">
+          <a class="hero__nav__link" href="/packages">Packages</a>
+          <a class="hero__nav__link" href="/testimonials">Testimonials</a>
+          <a class="hero__nav__link" href="https://medium.com/@beyondfit93">Blog</a>
+          <a class="hero__nav__contact" href="#contact">Contact</a>
       </div>
+      <i id="openMenu" class="fa fa-bars" style="position:relative;z-index:4"></i>
+      </div>
+
       <div class="hero__title">
         MORE THAN FITNESS,<br class="dt-only"/>
         IT'S A JOURNEY
+      </div>
+      <div class="hero__sub">
+        Today is the birth of something new and the start of something
+        great. Trust the process and enjoy the journey to get the results you’ll truly
+        come to appreciate.
       </div>
       <div class="hero__filter"></div>
     </div>
 
 
   <div class="body_content">
+
+    <div id="mobileMenu" class="d-none mobile-menu">
+      <div style="display:flex;padding: 12px;align-items: center; justify-content: center">
+        <a href="/"><img style="height: 50px;" src="/static/img/logo_white.png" /></a>
+      </div>
+      <a href="/testimonials" id="closeMenu" class="mobile-menu-row">
+        <small style="opacity: 0.5"> Close </small>
+      </a>
+      <a href="/" class="mobile-menu-row">
+        Home
+      </a>
+      <a href="/packages" class="mobile-menu-row">
+        Packages
+      </a>
+      <a href="/testimonials" class="mobile-menu-row">
+        Testimonials
+      </a>
+      <a class="mobile-menu-row" href="tel:+17034057793">703.405.7793</a>
+      <a class="mobile-menu-row" href="https://www.facebook.com/BeyondFitRVA/"><i class="fa fa-facebook pad-r-8"></i><small>Facebook</small></a>
+      <a class="mobile-menu-row" href="https://www.instagram.com/BeyondFit_RVA/"><i class="fa fa-instagram pad-r-8"></i><small>INSTAGRAM</small></a>
+      <a class="mobile-menu-row" href="https://www.youtube.com/channel/UCb4erI_nB1ySh9sTWqD7itA"><i class="fa fa-youtube pad-r-8"></i> <small>YOUTUBE</small></a>
+    </div>
 
     <div class="mission">
       <div class="mission__content">
@@ -33,7 +67,13 @@
         </div>
         <div class="mission__cta">PROVIDE AND IMPLEMENT WELL DESIGNED, COLLABORATIVE PROGRAMS FOR CLIENTS IN AND OUT OF THE GYM.</div>
         <div class="mission__copy">
-          Our goal is to provide you with the knowledge, motivation, and training to enhance your physical and physiological needs. We believe Beyond Fit is the environment where successful goals are met through the utilization of weight bearing exercises, along with free-weight, ground based, and multi-joint movements. Clients will train systematically in a safe and professional environment with emphasis on injury prevention and high physical demands.
+          The mission of Beyond Fit is to provide and implement well designed, collaborative
+          programs for clients in and out of the gym. Our goal is to provide them with the
+          knowledge, motivation, and training to enhance their physical and physiological activity.
+          We believe Beyond Fit is the environment where successful goals are met through the
+          implementation of scientific knowledge to develop structured, proper exercise
+          selection. Clients will train systematically in a safe and professional environment with
+          emphasis on injury prevention and high physical demands.
         </div>
       </div>
     </div>
@@ -48,17 +88,19 @@
         </div>
 
         <div class="team__member-row fx-col-rev-s">
-          <div class="team__member-section pad-r-30 pad-t-30 pad-l-30-s">
+          <div class="team__member-section pad-t-30 pad-l-30-s">
             <div class="team__member-title">David Kim</div>
             <div class="team__member-description">
-                Received first bachelor’s in kinesiology and health sciences, with a
-                concentration in exercise science, and a second bachelor’s in psychology from VCU. Certified strength and conditioning
-                specialist (CSCS) from the NSCA.  implements scientific knowledge to develop structured,
-                proper exercise selection for strength and conditioning (strength, power,
-                hypertrophy, muscular endurance), weight loss, and injury prevention. Lives an
-                active lifestyle, enjoys community based events in the heart of RVA, and attends
-                clinics, seminars, and conferences to obtain the most up to date information in
-                the field of strength and conditioning.
+              Received first bachelor’s in kinesiology and health sciences, with a
+              concentration in exercise science, and a second bachelor’s in psychology, both
+              from the Virginia Commonwealth University. Certified strength and conditioning
+              specialist (CSCS) from the NSCA. Excels in a wide variety of experiences with
+              different populations regarding strength, power, muscular endurance,
+              hypertrophy, and weight loss. Focuses on the utilization of weight bearing
+              exercises along with free-weight, ground based, and multi joint movements.
+              Lives an active lifestyle, enjoys community based events in the heart of RVA,
+              and attends clinics, seminars, and conferences to obtain the most up to date
+              information in the field of strength and conditioning.
             </div>
           </div>
           <div class="team__member-section">
@@ -69,15 +111,28 @@
 
         <div class="team__member-row">
           <div class="team__member-section">
-            <img src="/static/img/Baylor-004.jpg" />
+            <img src="/static/img/Baylor.jpg" />
             <div class="team__member-section--filter"></div>
           </div>
-          <div class="team__member-section pad-l-30 pad-t-30 pad-r-30-s">
+          <div class="team__member-section  pad-t-30 l-30 pad-r-30-s">
               <div class="team__member-title">Baylor Conde</div>
               <div class="team__member-description">
-                  Former Collegiate Athlete and mutli-sport athlete in High School. NASM certified. Found my passion for fitness after undergoing a complete lifestyle
-                  change in High School. Went from being 270lbs to a healthy athletic 189lbs.
-                  Since then I knew what it was I wanted to do. I wanted to use my knowledge and experience in the field to help motivate and push others to achieve success in their own lifestyle transformations. It’s a journey and I want to be there to help guide those down the paths to their own success.
+                Nationally certified Personal Trainer, as well as a Former
+                Collegiate and multi-sport athlete in High School. As an athlete
+                he’s developed a great understanding of the discipline it takes to
+                excel in fitness and lifestyle changes. Found his passion for
+                fitness after undergoing a complete lifestyle change in High
+                School. He went from being 270lbs to a healthy athletic
+                189lbs. As motivated as he is about his own fitness, he is most
+                passionate about helping others reach their fitness potential and
+                achieving success in their own lifestyle transformations. He values
+                the process involved with fitness and the journey individuals
+                undergo to create a better self. Baylor trained under many coaches
+                in different sports and been in the gym/fitness industry most his
+                life, which led to his pursuit of starting his own Brand and opening
+                his own gym. He’s taken everything he’s learned through the years
+                and with continued educational advancement applies it to his
+                clients to ensure they safely and actively achieve their goals.
               </div>
           </div>
         </div>
@@ -90,10 +145,15 @@
         <div class="contact__info">
             <div class="contact__headline">START YOUR FITNESS JOURNEY</div>
             <div class="contact__copy">
-              Beyond Fit offers a unique hybrid type training that is utilized to enhance the training regimen specific to one’s needs. With up to date knowledge on evidence based research, Baylor and
-              David provide a systematic training program to meet the physical demands of the clients in a safe and effective manner.
+              Beyond Fit offers a unique hybrid type training that is utilized to enhance the training regimen
+              specific to one’s needs. With up to date knowledge on evidence based research, we provide a
+              systematic training program to meet the physical demands of the clients in a safe and effective
+              manner. Beyond Fit also highly emphasizes on the relationships built throughout this journey.
+              We engage in the science of communication to improve and sustain the physical and mental
+              goals of our clients. Beyond Fit is a community friendly environment that pursues in a healthy
+              lifestyle for the trainers and the clients throughout our journey.
               <br/><br/>
-              Submit your email and a Beyondfit team member will get back in touch to discuss the next steps. 
+              Submit your email and a Beyondfit team member will get back in touch to discuss the next steps.
             </div>
         </div>
         <div class="contact__message">
@@ -104,7 +164,7 @@
             <button>SUBMIT</button>
         </div>
       </div>
-      
+
     </div>
 
     <div class="footer">
@@ -122,11 +182,26 @@
   </div> <!-- end body content -->
 
 
-
-
-
-
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="/static/js/main.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+      $("#openMenu").click(function(){
+          $("#mobileMenu").removeClass("d-none");
+          $("body").addClass("o-hidden");
+      })
+
+      $("#closeMenu").click(function(e){
+        e.preventDefault();
+        $("#mobileMenu").addClass("d-none");
+          $("body").removeClass("o-hidden");
+      })
+
+    })
+
+  </script>
   </body>
 </html>
