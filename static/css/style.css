@@ -61,7 +61,7 @@
   text-transform: uppercase;
   color: white;
   border-bottom: 1px solid #808080;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .mobile-menu-row:hover {
@@ -547,9 +547,11 @@ body {
 @media (max-width: 900px) {
   .footer {
     flex-direction: column;
-    height: 110px;
     justify-content: center;
     align-content: center;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 900px) {
@@ -557,6 +559,13 @@ body {
     display: flex;
     width: 100%;
     margin-top: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer a {
+    line-height: 30px;
   }
 }
 .footer a {
